@@ -1,0 +1,129 @@
+/* Main body styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading styles */
+h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Container for centering the content */
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task table styles */
+.task-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Button styles */
+a.button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: block; /* Ensure buttons are on their own line */
+    margin-bottom: 4px; /* Space between buttons */
+}
+
+a.button span {
+    white-space: nowrap;
+}
+
+.complete {
+    background-color: #2ecc71;
+}
+
+.incomplete {
+    background-color: #e74c3c;
+}
+
+.delete {
+    background-color: #95a5a6;
+}
+
+/* Styles for forms */
+.task-form,
+.search-form,
+.sort-filter-form {
+    margin-bottom: 20px;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.task-form input[type=text],
+.task-form input[type=date],
+.search-form input[type=text],
+.sort-filter-form select,
+.task-form button,
+.search-form button,
+.sort-filter-form button {
+    flex: 1 1 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Button hover effects */
+.task-form button:hover,
+.search-form button:hover,
+.sort-filter-form button:hover,
+a.button:hover {
+    background: #2980b9;
+}
+
+/* Form group styling */
+.sort-filter-wrapper .form-group {
+    flex: 1 1 48%;
+    margin-bottom: 10px;
+}
+
+/* Update and Reset button styles */
+.update-list-btn,
+.reset-list-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-list-btn {
+    background-color: #e74c3c;
+}
+
+.update-list-btn:hover,
+.reset-list-btn:hover {
+    opacity: 0.9;
+}
